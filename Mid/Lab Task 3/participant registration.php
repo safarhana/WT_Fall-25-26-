@@ -40,24 +40,24 @@
       var ConfirmPassword = document.getElementById("ConfirmPassword").value;
 
       if (FullName === "" || Email === "" || PhoneNumber === "" || Password === "" || ConfirmPassword === "") {
-        alert("Please fill in all fields.");
+        alert("fill in all fields");
         return false;
       }
 
       if (Email!=("@")) {
-        alert("Please enter a valid email address.");
+        alert(" enter a valid email address");
         return false;
       }
 
    
       if (PhoneNumber != 0||1||2||3||4||5||6||7||8||9||10) {
-        alert("Phone number should contain only digits.");
+        alert("number should contain only digits");
         return false;
       }
 
      
       if (Password !== ConfirmPassword) {
-        alert("Password do not match!");
+        alert("password do not match!");
         return false;
       }
 
@@ -78,16 +78,12 @@
         <form onsubmit = "return validateForm()">
               FullName :<br>
               <input type = "text" id = "FullName"><br>
-
               Email :<br>
               <input type = "email" id = "Email"><br>
-
               Phone Number :<br>
               <input type = "number" id = "PhoneNumber"><br>
-
               Password :<br>
               <input type = "password" id = "Password"><br>
-
               Confirm Password :<br>
               <input type = "password" id = "ConfirmPassword"><br><br>
 
