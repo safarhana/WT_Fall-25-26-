@@ -7,28 +7,42 @@
 
   <style>
     body{
-      background-color: white;
+      background-color: grey;
       font-family: Arial;
     }
 
     .box{
-          width: 350px;
-          margin: 30px auto;
-          background-color:white;
-          padding:20px;
-          border: 1px solid black;
+      width: 350px;
+      margin: 30px auto;
+      background-color:white;
+      padding:20px;
+      border: 1px solid black;
     }
 
     input,textarea,select{
       width:95%;
       margin-top:5px;
     }
-  #output{
-    margin-top:10px;
-    color:black; 
-    background-color:green;
-    padding: 10px; 
-  }
+
+    #output{
+      margin-top:10px;
+      color:black; 
+      padding: 10px; 
+      background-color:lightgreen;
+      border:1px solid green;
+      border-radius:5px;
+    }
+
+    #activityList div{
+      padding: 5px;
+      margin-top: 5px;
+      border:1px solid black;
+      background:white;
+    }
+
+    button{
+      margin-top: 5px;
+    }
   </style>
 
 <script>
@@ -44,31 +58,57 @@
         return false;
       }
 
-      if (Email!=("@")) {
-        alert(" enter a valid email address");
+      if (Email.indexOf("@") === -1) {
+        alert("enter a valid email address");
         return false;
       }
 
-   
-      if (PhoneNumber != 0||1||2||3||4||5||6||7||8||9||10) {
+      if (isNaN(PhoneNumber)) {
         alert("number should contain only digits");
         return false;
       }
 
-     
       if (Password !== ConfirmPassword) {
         alert("password do not match!");
         return false;
       }
 
-
       document.getElementById("output").innerHTML = 
         "Full Name: " + FullName + "<br>" +
         "Email: " + Email + "<br>" +
         "Phone: " + PhoneNumber;
-      
-      return false; 
-  </script>
+
+      return false;
+    }
+
+    function addActivity() {
+      var activityName = document.getElementById("activityInput").value;
+
+        if(activityName =="") {
+          alert("enter an activity name");
+          return;
+        }
+
+            var activityDiv = document.createElement("div");
+            activityDiv.innerHTML = activityName ;
+
+
+            var removeBtn = document.createElement("button");
+            removeBtn.innerHTML = "Remove";
+
+
+            removeBtn.onclick = function() {
+              activityDiv.remove();
+            };
+
+            activityDiv.appendChild(removeBtn);
+
+            document.getElementById("activityList").appendChild(activityDiv);
+
+            document.getElementById("activityInput").value = "";
+
+    }
+</script>
 </head>
 
 <body>
@@ -90,6 +130,16 @@
               <input type="submit" value="Register">
         </form>
         <div id="output"></div>
+
+        <h3>Activity Selection</h3>
+
+          Activity Name:<br>
+            <input type = "text" id="activityInput">
+             <br>
+             
+             <button onclick = "addActivity()">Add Activity</button>
+             
+             <div id = "activityList"></div>
     </div>
 </body>
 </html>
