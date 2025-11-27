@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Information Boxes</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 30px;
+        }
+
+        /* Product Box Styling */
+        .product-box {
+            display: inline-block;        /* Show side-by-side */
+            width: 250px;
+            background-color: #ffffff;
+            border: 2px solid #ccc;
+            padding: 15px;
+            margin: 15px;
+            text-align: center;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        /* Hover outline effect */
+        .product-box:hover {
+            outline: 3px solid #007bff;
+            outline-offset: 5px;
+        }
+
+        .product-box img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 12px;
+        }
+
+        .product-box h3 {
+            margin: 10px 0;
+        }
+
+        .product-box p {
+            margin: 8px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #007bff;
+            margin: 10px 0;
+        }
+
+        .buy-link {
+            text-decoration: none;
+            padding: 8px 12px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+        }
+
+        .buy-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- PRODUCT 1 -->
+    <div class="product-box">
+        <img src="https://via.placeholder.com/150" alt="Laptop">
+        <h3>Laptop</h3>
+        <p>Powerful performance with a sleek design. Perfect for work and gaming.</p>
+        <p class="price">$899</p>
+        <a href="#" class="buy-link">Buy Now</a>
+    </div>
+
+    <!-- PRODUCT 2 -->
+    <div class="product-box">
+        <img src="https://via.placeholder.com/150" alt="Headphones">
+        <h3>Headphones</h3>
+        <p>Experience rich sound quality with noise cancellation technology.</p>
+        <p class="price">$149</p>
+        <a href="#" class="buy-link">Buy Now</a>
+    </div>
+
+    <!-- PRODUCT 3 -->
+    <div class="product-box">
+        <img src="https://via.placeholder.com/150" alt="Smartwatch">
+        <h3>Smartwatch</h3>
+        <p>Track fitness, receive notifications, and stay connected in style.</p>
+        <p class="price">$199</p>
+        <a href="#" class="buy-link">Buy Now</a>
+    </div>
+
+</body>
+
+</html>

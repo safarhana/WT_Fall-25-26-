@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Card</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px;
+        }
+
+        /* Card Container */
+        .user-card {
+            width: 260px;
+            background-color: #ffffff;
+            border: 2px solid #ddd;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            text-align: center;
+
+            position: relative; /* Required for absolute badge */
+            margin: auto;
+        }
+
+        /* Profile Photo */
+        .user-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;   /* Round photo */
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        /* Badge */
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+
+            background-color: #28a745;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+        }
+
+        .user-name {
+            font-size: 1.4em;
+            margin: 8px 0;
+        }
+
+        .bio {
+            font-size: 0.95em;
+            color: #555;
+            line-height: 1.4em;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- USER CARD -->
+    <div class="user-card">
+
+        <div class="badge">Online</div>
+
+        <img src="D:\2022\IMG-20220711-WA0007.jpg" alt="User Photo">
+
+        <h2 class="user-name">Sarah Johnson</h2>
+        <p class="bio">Web developer with a passion for UI/UX design. Loves creating modern and
+            user-friendly interfaces.</p>
+
+    </div>
+
+</body>
+
+</html>

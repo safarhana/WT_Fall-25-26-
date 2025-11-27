@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal Layout</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        /* Common box styling */
+        .section {
+            display: inline-block;      /* Place boxes side-by-side */
+            vertical-align: top;        /* Align them at the top */
+            padding: 15px;
+            border: 2px solid #333;
+            margin-right: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 20%;
+            background-color: #e1f5fe;
+        }
+
+        /* Main Content */
+        .main {
+            width: 58%;                 /* Slightly less than 60% to prevent wrapping */
+            background-color: #fff9c4;
+        }
+
+        /* Advertisement Panel */
+        .ads {
+            width: 20%;
+            background-color: #ffe0b2;
+            margin-right: 0;           /* Last section → no extra margin */
+        }
+
+        /* Prevent wrapping to next line */
+        .container {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>News Portal Layout</h1>
+
+    <div class="container">
+
+        <!-- Sidebar Section -->
+        <div class="section sidebar">
+            <h2>Categories</h2>
+            <p>- Technology</p>
+            <p>- Sports</p>
+            <p>- World News</p>
+            <p>- Entertainment</p>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="section main">
+            <h2>Top News</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales orci non ligula 
+            commodo, vitae tincidunt lacus ultricies. Aliquam erat volutpat. Suspendisse potenti.</p>
+
+            <p>Phasellus vehicula risus at laoreet aliquet. Nullam a ipsum a lorem ultricies volutpat. 
+            Nunc sed diam lacinia, pellentesque ipsum nec, commodo elit.</p>
+        </div>
+
+        <!-- Advertisement Section -->
+        <div class="section ads">
+            <h2>Advertisements</h2>
+            <p>Your Ad Here! Buy space now.</p>
+            <p>Promotions • Deals • Offers</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
