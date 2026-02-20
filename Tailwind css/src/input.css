@@ -1,6 +1,6 @@
 @import "tailwindcss";
 /* @custom-variant dark (&:where(.dark, .dark *)); */
-@theme {
+/* @theme {
   --color-primary: #7765e3;
   --color-theme:#edd3c4;
   --color-body:#c8adc0;
@@ -9,5 +9,5 @@
 
 
   --text-10xl: 100px;
-  
-}
+
+} */
