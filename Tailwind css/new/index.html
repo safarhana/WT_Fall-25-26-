@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Rivera – Freelancer</title>
+    <!-- Step 2: Connect the CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <span class="logo">alex.dev</span>
+
+          <!-- desktop nav -->
+          <nav class="nav" id="nav">
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <!-- hamburger button (mobile only) -->
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="container">
+        <p class="hero-badge">✦ Available for freelance</p>
+        <h1 class="hero-title">
+          I build things<br />
+          <span class="hero-outline">for the web.</span>
+        </h1>
+        <p class="hero-sub">
+          Front-end developer & UI designer helping startups launch
+          fast, beautiful, and responsive websites.
+        </p>
+        <a href="#services" class="btn">See my services ↓</a>
+      </div>
+      <div class="blob"></div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">What I do</h2>
+        <p class="section-sub">Three things I'm really good at.</p>
+
+        <!-- Step 4-6: This grid changes columns on different screens -->
+        <div class="cards-grid">
+
+          <div class="card card-yellow">
+            <div class="card-icon">🎨</div>
+            <h3>UI Design</h3>
+            <p>Clean, modern interfaces that feel great to use. I design in Figma and build in code.</p>
+          </div>
+
+          <div class="card card-blue">
+            <div class="card-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>Fast, responsive websites using HTML, CSS, JavaScript, and modern frameworks.</p>
+          </div>
+
+          <div class="card card-green">
+            <div class="card-icon">📱</div>
+            <h3>Responsive Design</h3>
+            <p>Every site I build works perfectly on phones, tablets, and desktops. Always.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section id="skills" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-sub">Tools and technologies I use daily.</p>
+
+        <div class="skills-grid">
+          <div class="skill">
+            <div class="skill-bar"><span style="--p: 90%"></span></div>
+            <p>HTML / CSS — 90%</p>
+          </div>
+          <div class="skill">
+            <div class="skill-bar"><span style="--p: 80%"></span></div>
+            <p>JavaScript — 80%</p>
+          </div>
+          <div class="skill">
+            <div class="skill-bar"><span style="--p: 75%"></span></div>
+            <p>Tailwind CSS — 75%</p>
+          </div>
+          <div class="skill">
+            <div class="skill-bar"><span style="--p: 70%"></span></div>
+            <p>React — 70%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Say hello 👋</h2>
+        <p class="section-sub">Got a project? Let's talk.</p>
+
+        <form class="form">
+          <!-- Step 6-7: This row stacks on mobile, goes side-by-side on tablet -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="John Doe" />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" placeholder="john@email.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">Send Message →</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <p>© 2026 Alex Rivera. Built with HTML & CSS.</p>
+    </footer>
+
+    <script>
+      const btn  = document.getElementById('hamburger');
+      const nav  = document.getElementById('nav');
+      btn.addEventListener('click', () => {
+        nav.classList.toggle('nav-open');
+        btn.classList.toggle('active');
+      });
+    </script>
+
+  </body>
+</html>

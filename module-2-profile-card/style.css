@@ -1,0 +1,55 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.card{
+  width:300px;
+  padding: 20px;
+  margin: 80px auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+.card h4{
+  margin: 5px 0 15px 0;
+  color: #777;
+  font-weight: normal;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: grey;
+}
+
+.card button:hover {
+  background-color: greenyellow;
+}
+
+.card:hover {
+  background-color: darkgreen;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}

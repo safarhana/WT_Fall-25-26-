@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <a href="list.html">List</a>
+      <a href="table.html">Table</a>
+      <a href="form.html">Form</a>
+    </div>
+    <h1>Multimedia</h1>
+    <!-- <div>
+      <img
+        src="https://cdn.britannica.com/68/6268-050-04FB8622/Bangladesh.jpg"
+        alt="Avatar Photo"
+        width="300"
+      />
+    </div> -->
+
+    <!-- <div>
+      <video controls width="300">
+        <source src="video.mp4" type="video/mp4" />
+      </video>
+    </div> -->
+
+    <div>
+      <audio controls>
+        <source src="video.mp4" type="audio/mpeg" />
+      </audio>
+    </div>
+
+    <div>
+      <h3>Details and summary</h3>
+
+      <details>
+        <summary>1. আমি কি ভিডিওগুলো ডাউনলোড করতে পারবো?</summary>
+        <p>হ্যা, ওস্তাদের অ্যাপে আপনি ভিডিও ডাউনলোড করে রাখতে পারবেন।</p>
+      </details>
+
+      <br />
+      <br />
+    </div>
+
+    <div>
+      <h2>Dialog Element</h2>
+
+      <dialog id="myDialog">
+        <p>Hello Dialog</p>
+        <button onclick="closeDialog()">Close</button>
+      </dialog>
+
+      <button onclick="openDialog()">Open Dialog</button>
+    </div>
+
+    <script>
+      const dialog = document.getElementById("myDialog");
+
+      function openDialog() {
+        dialog.showModal();
+      }
+
+      function closeDialog() {
+        dialog.close();
+      }
+    </script>
+  </body>
+</html>
