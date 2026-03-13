@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agency Landing Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="./style.css" rel="stylesheet">
+</head>
+<body>
+
+
+<input type="checkbox" id="ham-toggle">
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="#hero" class="logo">
+      <img src="Logo.png" alt="Agency Logo" width="38" height="38">
+      <span class="logo-text">Agency</span>
+    </a>
+    <div class="nav-links">
+      <a href="#hero" class="nav-link">Services</a>
+      <a href="#values" class="nav-link">Our Values</a>
+      <a href="#cases" class="nav-link">Case Studies</a>
+      <a href="#" class="nav-link">Blog</a>
+      <a href="#" class="nav-link">Inner Pages</a>
+    </div>
+    <div class="nav-actions">
+      <a href="#" class="btn-login">LOGIN</a>
+      <a href="#" class="btn-register">REGISTER</a>
+      <span class="nav-settings">
+        <img src="android-settings.png" alt="Settings" width="20" height="20">
+      </span>
+    </div>
+  
+    <label for="ham-toggle" class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </label>
+  </div>
+</nav>
+
+
+<div class="mob-menu">
+  <a href="#hero" class="mob-link">Services</a>
+  <a href="#values" class="mob-link">Our Values</a>
+  <a href="#cases" class="mob-link">Case Studies</a>
+  <a href="#" class="mob-link">Blog</a>
+  <a href="#" class="mob-link">Inner Pages</a>
+  <div class="mob-actions">
+    <a href="#" class="btn-login">LOGIN</a>
+    <a href="#" class="btn-register">REGISTER</a>
+  </div>
+</div>
+
+
+<section class="hero" id="hero">
+  <div class="hero-blob"></div>
+  <div class="hero-main">
+    <div class="hero-text">
+      <h1 class="hero-title">Aenean Facilisis Vitae</h1>
+      <p class="hero-sub">Lorem ipsum dolor sit amet consectetur adipiscing<br>Integer id orci sed ante tincidunt</p>
+      <a href="#" class="btn-write">
+        WRITE TO US
+        <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <div class="hero-image">
+      <img src="Banner1.png" alt="Rocket illustration" style="width:100%;max-width:460px;display:block;">
+    </div>
+  </div>
+  <div class="pagination-strip">
+    <div class="pag-item">
+      <div class="pag-title-blue">Business Solution</div>
+      <div class="pag-sub">Interdum et malesuada fames ac ante...</div>
+    </div>
+    <div class="pag-item">
+      <div class="pag-title-dark">Free project quote</div>
+      <div class="pag-sub">Interdum et malesuada fames ante...</div>
+    </div>
+    <div class="pag-item">
+      <div class="pag-title-dark">Nulla lobortis nunc</div>
+      <div class="pag-sub">Interdum et malesuada fames ac ante...</div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="diamond-wrap">
+      <div class="d-bg1"></div>
+      <div class="d-bg2"></div>
+      <div class="d-main"><span>About<br>Us</span></div>
+      <div class="d-photo d-photo-top">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&q=80" alt="Office">
+      </div>
+      <div class="d-photo d-photo-bot">
+        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=400&q=80" alt="Building">
+      </div>
+      <div class="d-outline"></div>
+    </div>
+    <div class="about-text">
+      <h2 class="about-title">Nulla lobortis nunc vitae purus facilisis</h2>
+      <p class="about-desc">Vestibulum sit amet tortor libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper ultrices. Aenean facilisis vitae purus facilisis semper.</p>
+      <div class="stats-row">
+        <div>
+          <div class="stat-num">+200</div>
+          <div class="stat-line"></div>
+          <div class="stat-label">Employee</div>
+        </div>
+        <div>
+          <div class="stat-num">+500</div>
+          <div class="stat-line"></div>
+          <div class="stat-label">Project</div>
+        </div>
+        <div>
+          <div class="stat-num">+300</div>
+          <div class="stat-line"></div>
+          <div class="stat-label">Clients</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="services-section" id="services">
+  <div class="services-inner">
+    <div class="services-header">
+      <h2 class="services-title">Our Services</h2>
+      <a href="#" class="see-all">SEE ALL</a>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card">
+        <div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&q=80" alt="Tech"></div>
+        <div class="svc-body">
+          <div class="svc-name">Lorem ipsum dolor</div>
+          <div class="svc-desc">Pellentesque ac bibendum tortor, vel blandit nulla. Nulla eget lobortis lacus. Eu aliquam nibh tempus at</div>
+          <a href="#" class="svc-btn">SEE DETAIL</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=80" alt="Camera"></div>
+        <div class="svc-body">
+          <div class="svc-name">Lorem ipsum dolor</div>
+          <div class="svc-desc">Pellentesque ac bibendum tortor, vel blandit nulla. Nulla eget lobortis lacus. Eu aliquam nibh tempus at</div>
+          <a href="#" class="svc-btn">SEE DETAIL</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&q=80" alt="Studio"></div>
+        <div class="svc-body">
+          <div class="svc-name">Lorem ipsum dolor</div>
+          <div class="svc-desc">Pellentesque ac bibendum tortor, vel blandit nulla. Nulla eget lobortis lacus. Eu aliquam nibh tempus at</div>
+          <a href="#" class="svc-btn">SEE DETAIL</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=600&q=80" alt="Accessories"></div>
+        <div class="svc-body">
+          <div class="svc-name">Lorem ipsum dolor</div>
+          <div class="svc-desc">Pellentesque ac bibendum tortor, vel blandit nulla. Nulla eget lobortis lacus. Eu aliquam nibh tempus at</div>
+          <a href="#" class="svc-btn">SEE DETAIL</a>
+        </div>
+      </div>
+    </div>
+    <div class="svc-arrows">
+      <a href="#" class="arrow-btn" aria-label="Prev">
+        <img src="arrow left  blue.png" alt="Prev" width="16" height="16">
+      </a>
+      <a href="#" class="arrow-btn" aria-label="Next">
+        <img src="bluearray.png" alt="Next" width="16" height="16">
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="values-section" id="values">
+  <div class="values-inner">
+    <div class="values-diagram">
+      <img src="Illustration & Title.png" alt="Our Values diagram" style="width:100%;height:100%;object-fit:contain;display:block;">
+    </div>
+    <div class="values-text">
+      <h2 class="values-title">Nulla lobortis nunc vitae nisi semper velit</h2>
+      <p class="values-desc">Vestibulum sit amet tortor libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper ultrices. Aenean facilisis vitae purus facilisis semper.</p>
+      <div class="values-grid">
+        <div class="value-item">
+          <div class="value-icon-row">
+            <div class="value-icon" style="background:#E3F2FD">
+              <img src="blue circle.png" alt="Check" width="18" height="18">
+            </div>
+            <div class="value-name">Nulla lobortis nunc</div>
+          </div>
+          <div class="value-desc">Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
+        </div>
+        <div class="value-item">
+          <div class="value-icon-row">
+            <div class="value-icon" style="background:#E0F2F1">
+              <img src="target teal.png" alt="Target" width="18" height="18">
+            </div>
+            <div class="value-name">Vestibulum faucibus</div>
+          </div>
+          <div class="value-desc">In id nisi id neque venenatis molestie Quisque lacinia purus ut libero facilisis.</div>
+        </div>
+        <div class="value-item">
+          <div class="value-icon-row">
+            <div class="value-icon" style="background:#E3F2FD">
+              <img src="blue clock.png" alt="Clock" width="18" height="18">
+            </div>
+            <div class="value-name">Suspendisse porttitor</div>
+          </div>
+          <div class="value-desc">Nunc quis sem quis velit tincidunt congue a sit amet ante.</div>
+        </div>
+        <div class="value-item">
+          <div class="value-icon-row">
+            <div class="value-icon" style="background:#FFFDE7">
+              <img src="yellow lightbulb.png" alt="Lightbulb" width="18" height="18">
+            </div>
+            <div class="value-name">Ut sed eros</div>
+          </div>
+          <div class="value-desc">In hac habitasse platea dictumst. In mi nulla, fringilla vestibulum finibus et.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="testi-section" id="testimonials">
+  <div class="testi-inner">
+    <h2 class="testi-title">Client Testimonials</h2>
+    <div class="testi-body">
+      <div class="testi-left">
+        <div class="testi-cards">
+          <div class="testi-card">
+            <div class="testi-card-inner">
+              <p class="testi-text">Nam sollicitudin dignissim nunc, cursus ullamcorper eros vulputate sed. Vestibulum sit amet tortor sit amet libero.</p>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+            <div class="testi-author">
+              <img class="testi-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80" alt="Jane Doe">
+              <div>
+                <div class="testi-name">Jane Doe</div>
+                <div class="testi-role">Chief Digital Officer</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-card-inner">
+              <p class="testi-text">Nam sollicitudin dignissim nunc, cursus ullamcorper eros vulputate sed. Vestibulum sit amet tortor sit amet libero.</p>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+            <div class="testi-author">
+              <img class="testi-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80" alt="Jane Doe">
+              <div>
+                <div class="testi-name">Jane Doe</div>
+                <div class="testi-role">Chief Digital Officer</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-card-inner">
+              <p class="testi-text">Nam sollicitudin dignissim nunc, cursus ullamcorper eros vulputate sed. Vestibulum sit amet tortor sit amet libero.</p>
+              <div class="testi-stars">★★★★★</div>
+            </div>
+            <div class="testi-author">
+              <img class="testi-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80" alt="Jane Doe">
+              <div>
+                <div class="testi-name">Jane Doe</div>
+                <div class="testi-role">Chief Digital Officer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-dots">
+          <span class="tdot i"></span><span class="tdot i"></span><span class="tdot i"></span>
+          <span class="tdot i"></span><span class="tdot a"></span><span class="tdot i"></span>
+        </div>
+      </div>
+      <div class="testi-illus">
+        <img src="testimonial.png" alt="Testimonial illustration" style="width:100%;display:block;">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="logos-section">
+  <div class="logos-inner">
+    <div class="logo-item"><img src="Object.png" alt="Logo 1" width="26" height="26"></div>
+    <div class="logo-item"><img src="Object.png" alt="Logo 2" width="26" height="26"></div>
+    <div class="logo-item"><img src="Object.png" alt="Logo 3" width="26" height="26"></div>
+    <div class="logo-item"><img src="Object.png" alt="Logo 4" width="26" height="26"></div>
+    <div class="logo-item"><img src="Object.png" alt="Logo 5" width="26" height="26"></div>
+    <div class="logo-item"><img src="Object.png" alt="Logo 6" width="26" height="26"></div>
+  </div>
+</section>
+
+<section class="cases-section" id="cases">
+  <div class="cases-inner">
+    <div class="cases-sidebar">
+      <h2 class="cases-heading">Case<br>Studies</h2>
+      <input type="radio" name="ct" id="ct1" class="tab-radio" checked>
+      <label for="ct1" class="tab-label">Corporate</label>
+      <input type="radio" name="ct" id="ct2" class="tab-radio">
+      <label for="ct2" class="tab-label">Advertising</label>
+      <input type="radio" name="ct" id="ct3" class="tab-radio">
+      <label for="ct3" class="tab-label">Marketing</label>
+      <input type="radio" name="ct" id="ct4" class="tab-radio">
+      <label for="ct4" class="tab-label">Government</label>
+      <input type="radio" name="ct" id="ct5" class="tab-radio">
+      <label for="ct5" class="tab-label">Creative</label>
+    </div>
+    <div class="cases-grid">
+      <div class="case-card case-tall" style="grid-row:span 2;min-height:300px">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80" alt="Library" style="height:100%;width:100%">
+        <div class="case-grad"></div>
+        <div class="case-info">
+          <div class="case-badge" style="background:#7C3AED">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 19h20L12 2z" fill="white"/></svg>
+          </div>
+          <div>
+            <div class="case-name">Lorem Ipsum dolor</div>
+            <div class="case-sub">Vestibulum consequat hendrerit</div>
+          </div>
+        </div>
+      </div>
+      <div class="case-card case-sm">
+        <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80" alt="Laptop" style="height:100%;width:100%">
+        <div class="case-grad"></div>
+        <div class="case-info">
+          <div class="case-badge" style="background:#7C3AED">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="white" opacity=".2"/><path d="M9 12l2 2 4-4" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="case-name">Lorem Ipsum dolor</div>
+            <div class="case-sub">Vestibulum consequat hendrerit</div>
+          </div>
+        </div>
+      </div>
+      <div class="case-card case-sm">
+        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80" alt="Mobile" style="height:100%;width:100%">
+        <div class="case-grad"></div>
+        <div class="case-info">
+          <div class="case-badge" style="background:#1565C0">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="white" opacity=".2"/><path d="M5 12h14M12 5l7 7-7 7" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="case-name">Lorem Ipsum dolor</div>
+            <div class="case-sub">Vestibulum consequat hendrerit</div>
+          </div>
+        </div>
+      </div>
+      <div class="case-card case-sm">
+        <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?w=600&q=80" alt="Tablet" style="height:100%;width:100%">
+        <div class="case-grad"></div>
+        <div class="case-info">
+          <div class="case-badge" style="background:#6D28D9">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="white" opacity=".2"/><path d="M12 2L2 19h20L12 2z" fill="white" opacity=".8"/></svg>
+          </div>
+          <div>
+            <div class="case-name">Lorem Ipsum dolor</div>
+            <div class="case-sub">Vestibulum consequat hendrerit</div>
+          </div>
+        </div>
+      </div>
+      <div class="case-card case-sm">
+        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600&q=80" alt="Writing" style="height:100%;width:100%">
+        <div class="case-grad"></div>
+        <div class="case-info">
+          <div class="case-badge" style="background:#1565C0">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="white" opacity=".2"/><path d="M5 12h14" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M12 5l7 7-7 7" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="case-name">Lorem Ipsum dolor</div>
+            <div class="case-sub">Vestibulum consequat hendrerit</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-box">
+      <div>
+        <div class="cta-h">Ready to get started ?</div>
+        <div class="cta-p">Pellentesque ac bibendum tortor. Nulla eget lobortis lacus.</div>
+      </div>
+      <a href="#" class="cta-btn">
+        WRITE TO US
+        <img src="bluearray.png" alt="Arrow" width="18" height="18">
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo-wrap">
+          <img src="Logo.png" alt="Agency Logo" width="34" height="34">
+          <span class="footer-logo-text">Agency</span>
+        </div>
+        <p class="footer-desc">Nam posuere accumsan porta. Integer id orci sed ante tincidunt tincidunt sit amet sed libero.</p>
+        <p class="footer-copy">© Skyrev Theme 2020</p>
+      </div>
+      <div>
+        <div class="footer-col-h">Company</div>
+        <ul class="footer-ul">
+          <li><a href="#">Donec dignissim</a></li>
+          <li><a href="#">Curabitur egestas</a></li>
+          <li><a href="#">Nam posuere</a></li>
+          <li><a href="#">Aenean facilisis</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-h">Services</div>
+        <ul class="footer-ul">
+          <li><a href="#">Cras convallis</a></li>
+          <li><a href="#">Vestibulum faucibus</a></li>
+          <li><a href="#">Quisque lacinia purus</a></li>
+          <li><a href="#">Aliquam nec ex</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-h">Resources</div>
+        <ul class="footer-ul" style="margin-bottom:22px">
+          <li><a href="#">Suspendisse porttitor</a></li>
+          <li><a href="#">Nam posuere</a></li>
+          <li><a href="#">Curabitur egestas</a></li>
+        </ul>
+        <div class="socials">
+          <a href="#" class="soc-btn" style="background:transparent" title="Facebook">
+            <img src="fb.png" alt="Facebook" width="38" height="38">
+          </a>
+          <a href="#" class="soc-btn" style="background:transparent" title="LinkedIn">
+            <img src="linkedin.png" alt="LinkedIn" width="38" height="38">
+          </a>
+          <a href="#" class="soc-btn" style="background:transparent" title="Twitter">
+            <img src="twitter.png" alt="Twitter" width="38" height="38">
+          </a>
+          <a href="#" class="soc-btn" style="background:transparent" title="Instagram">
+            <img src="instagram.png" alt="Instagram" width="38" height="38">
+          </a>
+        </div>
+        <div class="lang-btn">
+          <img src="globe.png" alt="Globe" width="15" height="15">
+          English - En
+          <img src="downarray.png" alt="Down" width="13" height="13">
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-nav">
+        <a href="#">Portfolio</a>
+        <a href="#">How it Works</a>
+        <a href="#">Pricing</a>
+        <a href="#">About</a>
+        <a href="#">Login</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
